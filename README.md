@@ -4,15 +4,27 @@ Data structures and Alogrithms in Typescript
 
 ## Dependacies
 
-1. install dependancies run `sh install.sh`
+```bash
+jest
+typescript
+ts-jest
+@types/jest
+```
+
+1. install dependancies run `sh install.sh`from root
+
+or
 
 2. npm i -D jest ts-jest typescript
 
-#### Set up workspace
+```bash
+npm install --save-dev jest typescript ts-jest @types/jest
+npx ts-jest config:init
+```
 
-3. npm i -D @types/jest
+### Jest Setup
 
-# Jest.conf
+#### Jest.conf
 
 ```js
 module.exports = {
