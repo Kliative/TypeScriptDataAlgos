@@ -14,9 +14,11 @@ Data structures and Alogrithms in Typescript
 
 # Jest.conf
 
+```js
 module.exports = {
-transform: {'^.+\\.ts?$': 'ts-jest'},
-    testEnvironment: 'node',
-    testRegex: '/src/tests/.*\\.(test|spec)?\\.(ts|tsx)$',
-    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
+  transform: { "^.+\\.ts?$": "ts-jest" },
+  testEnvironment: "node",
+  testRegex: "/src/tests/.*\\.(test|spec)?\\.(ts|tsx)$",
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
 };
+```
