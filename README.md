@@ -1,10 +1,22 @@
 # TypeScriptDataAlgos
+
 Data structures and Alogrithms in Typescript
 
-# Set up workspace
+## Dependacies
 
-npm init
+1. install dependancies run `sh install.sh`
 
-npm install live-server --save-dev
+2. npm i -D jest ts-jest typescript
 
-tsc --init
+#### Set up workspace
+
+3. npm i -D @types/jest
+
+# Jest.conf
+
+module.exports = {
+transform: {'^.+\\.ts?$': 'ts-jest'},
+    testEnvironment: 'node',
+    testRegex: '/src/tests/.*\\.(test|spec)?\\.(ts|tsx)$',
+    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
+};

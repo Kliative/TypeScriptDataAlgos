@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../DataStructureAlgorythmsJS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TypeScriptDataAlgos"
+	}
+}
