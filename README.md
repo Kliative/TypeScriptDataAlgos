@@ -22,6 +22,24 @@ npm install --save-dev jest typescript ts-jest @types/jest
 npx ts-jest config:init
 ```
 
+### Structure
+
+Algos/...
+AlgoName.ts
+
+```js
+export default class Fibonnaci {
+ ...
+ staict FuncName = (arg:any): number => {
+   ...
+    return fibNum;
+ }
+};
+```
+
+tests/...
+AlgoName.test.ts
+
 ### Jest Setup
 
 #### Jest.conf
@@ -40,3 +58,8 @@ module.exports = {
 https://dev.to/terabaud/testing-with-jest-and-typescript-the-tricky-parts-1gnc[`https://dev.to/terabaud/testing-with-jest-and-typescript-the-tricky-parts-1gnc`]
 
 https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40[`https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40`] - Jest github[`https://github.com/chiragrupani/TSUnitTestsSetup/tree/master/HelloJest`]
+
+# Alogorith List
+
+1. Fibonnaci (Recursive, Iterative, Memoization) -> Memoize Test Need Fix
+2. Palindrome
