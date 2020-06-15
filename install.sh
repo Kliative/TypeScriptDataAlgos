@@ -1,3 +1,2 @@
-
-npm i -D jest ts-jest typescript
-npm i -D @types/jest
+npm install --save-dev jest typescript ts-jest @types/jest
+npx ts-jest config:init
