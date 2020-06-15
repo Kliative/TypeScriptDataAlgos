@@ -30,7 +30,7 @@ AlgoName.ts
 ```js
 export default class Fibonnaci {
  ...
- staict FuncName = (arg:any): number => {
+ static FuncName = (arg:any): number => {
    ...
     return fibNum;
  }
@@ -39,6 +39,13 @@ export default class Fibonnaci {
 
 tests/...
 AlgoName.test.ts
+
+```js
+import AlgoName from '../[AlgoName]';
+describe('AlgoName', function () {
+    it('AlgoName is ...', () => {
+    .......
+```
 
 ### Jest Setup
 
