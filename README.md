@@ -72,3 +72,5 @@ https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/[`ht
 
 1. Fibonnaci (Recursive, Iterative, Memoization) -> Memoize Test Need Fix
 2. Palindrome
+3. TwoSum
+4. FizzBuzz
