@@ -49,43 +49,28 @@ export default class Fibonnaci {
 
     /**
      * Recursive with memoization
+     * fibMem take slowfib as a paramater and returns number
      *
      * @param {number} memNum
      * @returns {number}
      */
 
-    static fibMemoize = (memNum: number): number => {
-        const memo: any = {};
-        const fibNumMem = (memNum: number): number => {
-            if (memNum === 0) return 0;
-            if (memNum === 0) return 1;
-            if (memo[`${memNum}`]) return memo[`${memNum}`];
-
-
-
-            return memo[`${memNum}`] = fibNumMem(memNum - 1) + fibNumMem(memNum - 2);
-        }
-
-        return fibNumMem(memNum)
-    }
-
-    static fbnMemo =  (index: number, cache: number[] = []): number => {
-        cache = cache;
-
-        if (cache[index]) {
-            return cache[index];
-        } else {
-            if (index < 3) {
-                return 1;
-            } else {
-                cache[index] - Fibonnaci.fbnMemo(index - 1, cache) + Fibonnaci.fbnMemo(index - 2, cache);
+    static fibMem = (func: Function): Function => {
+        const cache: any = {};
+        return (...args: any): number => {
+            if (cache[args]) {
+                return cache[args];
             }
 
-        }
+            const result = func.apply(Fibonnaci, args);
+            cache[args] = result;
 
-        return cache[index];
+            return result;
+        };
 
     };
+
+
     static slowFib = (slowNum: number): number => {
         if (slowNum < 2) {
             return slowNum;
@@ -94,6 +79,6 @@ export default class Fibonnaci {
         return Fibonnaci.fibR(slowNum - 1) + Fibonnaci.fibR(slowNum - 2);
     }
 
-    // fib = this.memoize(this.slowFib);
+    static fibm = Fibonnaci.fibMem(Fibonnaci.slowFib);
 
 }

@@ -17,15 +17,13 @@ describe('calculate', function () {
         expect(Fibonacci.fibI(3)).toEqual(2);
     });
 
+    it('calculates correct Memooize Fibonacci value for 15', () => {
+        expect(Fibonacci.fibm(15)).toEqual(610);
+    });
 
-    // Fix test
-    // fit('calculates correct Memooize Fibonacci value for 15', () => {
-    //     expect(Fibonacci.fibMemoize(15)).toEqual(610);
-    // });
-
-    // it('calculates correct Memooize Fibonacci 2 value for 15', () => {
-    //     expect(Fibonacci.fbnMemo(15, [])).toEqual(610);
-    // });
+    it('calculates correct Memooize Fibonacci 2 value for 15', () => {
+        expect(Fibonacci.fibm(15, [])).toEqual(610);
+    });
 
     it('calculates correct Slow Memooize Fibonacci value for 39', () => {
         expect(Fibonacci.slowFib(39)).toEqual(63245986);
