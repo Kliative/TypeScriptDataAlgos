@@ -68,7 +68,9 @@ https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40[`
 
 https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/[`https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/`]
 
-# Alogorith List
+# Alogorithm List
 
 1. Fibonnaci (Recursive, Iterative, Memoization) -> Memoize Test Need Fix
 2. Palindrome
+3. TwoSum
+4. FizzBuzz
