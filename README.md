@@ -74,6 +74,8 @@ Algos
 
 https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/ 
 
+https://github.com/AvraamMavridis/Algorithms-Data-Structures-in-Typescript
+
 # Alogorithm List
 
 1. Fibonnaci (Recursive, Iterative, Memoization) -> Memoize Test Need Fix
