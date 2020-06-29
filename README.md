@@ -62,7 +62,7 @@ module.exports = {
 
 ##### Refs
 
-Jest 
+Jest
 
 https://dev.to/terabaud/testing-with-jest-and-typescript-the-tricky-parts-1gnc
 
@@ -72,11 +72,17 @@ https://github.com/chiragrupani/TSUnitTestsSetup/tree/master/HelloJest
 
 Algos
 
-https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/ 
+https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/
 
 https://github.com/AvraamMavridis/Algorithms-Data-Structures-in-Typescript
 
-https://medium.com/better-programming/basic-data-structures-in-typescript-7261d2be44ed#:~:text=Queues%2C%20stacks%2C%20linked%20lists%2C%20and%20generics&text=TypeScript%20allows%20us%20to%20create,data%20structures%20textbook%20or%20website.
+https://medium.com/better-programming/basic-data-structures-in-typescript
+
+https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/
+
+# Design Patterns
+
+TBC [ Adapter ]
 
 # Alogorithm List
 
@@ -86,3 +92,5 @@ https://medium.com/better-programming/basic-data-structures-in-typescript-7261d2
 4. FizzBuzz
 5. Anagram
 6. Merge Sort
+7. BubbleSort
+8. Selection Sort
