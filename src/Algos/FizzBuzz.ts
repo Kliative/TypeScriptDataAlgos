@@ -1,3 +1,9 @@
+/**
+  * JS used
+  * @opertator % Modulous operator return the remaineder of the 2 numbers being assessed
+  * @function (for...in) loops over Arrays
+  */
+
 export default class FizzBuzz {
     /**
       * Fizzbuzz
@@ -5,9 +11,13 @@ export default class FizzBuzz {
       * @returns {number | string}
       */
     static fizzbuzz = (num: number): number | string => {
-        var returnVal: string | number = 0;
+
+        // set types to accept only string or numbers assign to 0
+        let returnVal: string | number = 0;
+
+
         for (let i = 1; i <= num; i++) {
-            // i % 3 === 0 && i % 5 === 0
+            // checks the remaineder to axxert if number ifs divisible by 5 of 3
             if (i % 15 === 0) {
                 returnVal = 'fizzbuzz';
             } else if (i % 3 === 0) {
