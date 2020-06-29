@@ -62,11 +62,18 @@ module.exports = {
 
 ##### Refs
 
-https://dev.to/terabaud/testing-with-jest-and-typescript-the-tricky-parts-1gnc[`https://dev.to/terabaud/testing-with-jest-and-typescript-the-tricky-parts-1gnc`]
+Jest 
 
-https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40[`https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40`] - Jest github[`https://github.com/chiragrupani/TSUnitTestsSetup/tree/master/HelloJest`]
+https://dev.to/terabaud/testing-with-jest-and-typescript-the-tricky-parts-1gnc
 
-https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/[`https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/`]
+https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40
+
+https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40- 
+https://github.com/chiragrupani/TSUnitTestsSetup/tree/master/HelloJest
+
+Algos
+
+https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/ 
 
 # Alogorithm List
 
@@ -74,3 +81,4 @@ https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/[`ht
 2. Palindrome
 3. TwoSum
 4. FizzBuzz
+5. Anagram
