@@ -74,6 +74,10 @@ Algos
 
 https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/ 
 
+https://github.com/AvraamMavridis/Algorithms-Data-Structures-in-Typescript
+
+https://medium.com/better-programming/basic-data-structures-in-typescript-7261d2be44ed#:~:text=Queues%2C%20stacks%2C%20linked%20lists%2C%20and%20generics&text=TypeScript%20allows%20us%20to%20create,data%20structures%20textbook%20or%20website.
+
 # Alogorithm List
 
 1. Fibonnaci (Recursive, Iterative, Memoization) -> Memoize Test Need Fix
@@ -81,3 +85,4 @@ https://www.udemy.com/course/learning-algorithms-in-javascript-from-scratch/
 3. TwoSum
 4. FizzBuzz
 5. Anagram
+6. Merge Sort
