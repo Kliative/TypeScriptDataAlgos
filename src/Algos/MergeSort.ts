@@ -44,6 +44,7 @@ export default class MergeSort {
             } else {
                 minElem = numArr2.shift()
             }
+            // push elem into results
             result.push(minElem);
         }
         // stores remaning values into the resuls array and reassignes itself
@@ -53,6 +54,7 @@ export default class MergeSort {
             result = result.concat(numArr2);
         }
 
+        // clears array of nulls and undefineds
         const filteredResult = result.filter(function (el) {
             return el != null || undefined;
         });
