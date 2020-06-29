@@ -68,7 +68,6 @@ https://dev.to/terabaud/testing-with-jest-and-typescript-the-tricky-parts-1gnc
 
 https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40
 
-https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40- 
 https://github.com/chiragrupani/TSUnitTestsSetup/tree/master/HelloJest
 
 Algos
