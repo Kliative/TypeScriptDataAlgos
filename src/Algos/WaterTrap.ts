@@ -5,44 +5,68 @@
 * 
 * Approach
 * 1. Find heights points on left and right side
-* 2. Take the samller of the two as the cut off
+* 2. Find the smaller of the two heights at each index
 * 3. The difference between the the smaller height and the current element hieght will give you the water stored
 */
 
 export default class WaterTrap {
 
-    static rainCollection = (height: number[]): number => {
-        // collected water
-        let result = 0;
+    static ThirstTrap = (heights: number[]): number => {
+        const heightsLength = heights.length;
 
+        // Setup 2 Array to hold the heighst value at the give index of the each index
+        // form the left side of the array and from the right side
+        const leftHeightCompareArr = [];
+        const rightHeightCompareArr = [];
 
-        // loop through array and ignore the fist and last values; i=1 / eight.length - 1
-        for (let i = 1; i < height.length - 1; i++) {
+        // Holds the value of the hieghts point 
+        let leftMax = 0;
+        let rightMax = 0;
 
-            // max hieghts
-            let maxLeft = 0;
-            let maxRight = 0;
-
-            // Increment for left
-            // find the maximum element on the left
-            for (let j = i; j >= 0; j--) {
-                maxLeft = Math.max(maxLeft, height[j]);
-            }            
-            
-            // find the maximum element on the right
-            for (let j = i; j < height.length; j++) {
-                maxRight = Math.max(maxRight, height[j]);
-            }
-            
-            // find the min of maxLeft and maxRight and minus the height at i 
-            // add this value to the result which is 0
-            result = result + Math.min(maxLeft, maxRight) - height[i];
+        //  traverse through the array from the left starting at 0
+        for (let i = 0; i < heightsLength; i++) {
+            // Scan from left
+            // make the value at index i in leftHeightCompareArr[] = to leftMax
+            // which initially will be th 0
+            leftHeightCompareArr[i] = leftMax;
+            // set leftMax to the value returned from the max height 
+            // between rightMax (initailly 0) and the height at index j
+            leftMax = Math.max(leftMax, heights[i]);
 
         }
-        return result;
+
+        //  traverse through the array from the right starting at heights.index - 1
+        for (let j = heightsLength - 1; j >= 0; j--) {
+            // Scan from right
+            // make the value at index i in rightHeightCompareArr[] = to rightMax
+            // which initially will be heights.length -1 
+            rightHeightCompareArr[j] = rightMax;
+            // set rightMax to the value returned from the max height 
+            // between rightMax (initailly 0) and the height at index j
+            rightMax = Math.max(rightMax, heights[j]);
+        }
+        
+        // now that we have 2 arrays of the heighest pionts at those indexes 
+        // from the left perscpective and the right perscpective
+
+        // setup a number variable set to 0 to add all the left over water
+        let total = 0;
+        for (let i = 0; i < heightsLength; i++) {
+
+            // return the smaller of the 2 heights bewteen the leftHeightCompareArr and rightHeightCompareArr index i 
+            // and minus the height at index i, to get the water colelcted that point
+            let water = Math.min(leftHeightCompareArr[i], rightHeightCompareArr[i]) - heights[i];
+
+            // if the number is positive
+            // add it to them together for total water
+            // else add 0 to the total number
+            total += water > 0 ? water : 0;
+        }
+
+
+        return total;
 
     }
+
+
 }
-
-
-
