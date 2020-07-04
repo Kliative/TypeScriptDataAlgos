@@ -1,7 +1,7 @@
 /**
 * 
 * Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
-* @AlgoType Devide and Conquour Algorithm
+* @AlgoType Divided and Conquer Algorithm
 * 
 * Approach
 * 1. Find heights points on left and right side
@@ -54,7 +54,7 @@ ThirstTrap = (heights) => {
 }
 
 
-console.warn(ThirstTrap([15,0,6,10,11,2,5]));
+// console.warn(ThirstTrap([15,0,6,10,11,2,5]));
 // [1, 0, 2, 1, 0, 1][3, 2, 1, 2, 1]
 // [1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
 // [2, 0, 1, 2, 1, 0]
@@ -110,4 +110,22 @@ WetTrap = (height) => {
 
 }
 
-console.warn(WetTrap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]));
+// console.warn(WetTrap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]));
+function floodVolume(elevations) {
+    var peakIdx, i = 0, peak = 0, volume = 0, total = 0;
+    const depth = (i, elevation = elevations[i]) => {
+        if (elevation >= peak) {
+            peak = elevation;
+            peakIdx = i;
+            total += volume;
+            volume = 0;
+        } else { volume += peak - elevation }
+    }
+    while (i < elevations.length) { depth(i++) }
+    const MAX_IDX = peakIdx;
+    volume = peak = 0;
+    while (i-- >= MAX_IDX) { depth(i) }    
+    return total;
+}
+
+console.warn(floodVolume([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]));

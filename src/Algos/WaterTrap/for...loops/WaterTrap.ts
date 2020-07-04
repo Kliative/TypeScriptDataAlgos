@@ -1,12 +1,12 @@
 /**
 * 
 * Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
-* @AlgoType Devide and Conquour Algorithm
+* @AlgoType Divided and Conquer Algorithm
 * 
 * Approach
 * 1. Find heights points on left and right side
 * 2. Find the smaller of the two heights at each index
-* 3. The difference between the the smaller height and the current element hieght will give you the water stored
+* 3. The difference between the smaller height and the current element height will give you the water stored
 */
 
 export default class WaterTrap {
