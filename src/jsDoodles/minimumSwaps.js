@@ -1,3 +1,30 @@
+/**
+ * 
+ * @param {number[]} arr 
+ */
+function minimumSwapsSlow(arr) {
+    // setup variable to count number of swaps
+    let swapCount = 0;
+     for (let index = 0; index < arr.length; index++) {
+         const currentInt = arr[index];
+         const position = index + 1;
+         if (currentInt !== position) {
+             let indexToSwap
+             for (let i = 0; i < arr.length; i++) {
+                 if (arr[i] === position) {
+                     indexToSwap = i;
+                     break
+                 }
+             }
+             arr[indexToSwap] = currentInt;
+             arr[index] = position;
+             swapCount = swapCount + 1;
+         }
+     }
+     return swapCount;
+ }
+ 
+
 
 /**
  * Find the minimum number of swaps
@@ -61,3 +88,5 @@ const swapsCounter = (arr, i) => {
 }
 
 console.warn(minimumSwaps([45, 46, 47, 48, 49, 50, 51]));
+
+console.warn(minimumSwapsSlow([45, 46, 47, 48, 49, 50, 51]));

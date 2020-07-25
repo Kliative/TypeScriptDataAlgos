@@ -14,3 +14,29 @@ arrLet.forEach((val, i) => {
 });
 
 console.warn(hashTableNumKey[1]);
+
+// ___________-----------------__________________------______-----_---_-_-_-__-_-__-__-----------------_--_-_-_--------
+
+const foreachLoop = (arrLet) => {
+    let hashTableNumKeyFun = {};
+    for (let i = 0; i < arrLet.length; i++) {
+         hashTableNumKeyFun[i] = arrLet[i];
+        
+    }
+    
+    console.warn(hashTableNumKeyFun[1]);
+}
+
+foreachLoop(arrLet);
+
+const foreachLoopNum = (arrLet) => {
+    let hashTableNumKeyFun = {};
+    for (let i = 0; i < arrLet.length; i++) {
+         hashTableNumKeyFun[arrLet[i]] = i;
+        
+    }
+    
+    console.warn(hashTableNumKeyFun['b']);
+}
+
+foreachLoopNum(arrLet);
